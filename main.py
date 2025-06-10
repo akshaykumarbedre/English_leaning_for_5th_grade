@@ -209,6 +209,8 @@ if "vocab_learned" not in st.session_state:
     st.session_state.vocab_learned = progress.get("vocab_learned", [])
 if "generating_in_background" not in st.session_state:
     st.session_state.generating_in_background = False
+if "speech_speed" not in st.session_state:
+    st.session_state.speech_speed = 0.8  # Default slow speed
 
 # Sidebar for progress tracking and data management
 with st.sidebar:
@@ -220,6 +222,19 @@ with st.sidebar:
         st.write("Words Learned:")
         for word in st.session_state.vocab_learned:
             st.write(f"- {word}")
+    
+    st.header("Speech Settings")
+    st.session_state.speech_speed = st.slider(
+        "Speech Speed", 
+        min_value=0.5, 
+        max_value=1.5, 
+        value=st.session_state.speech_speed, 
+        step=0.1,
+        help="0.5 = Very Slow, 1.0 = Normal, 1.5 = Fast"
+    )
+    speed_labels = {0.5: "Very Slow", 0.6: "Slow", 0.7: "Slow", 0.8: "Slow", 0.9: "Normal", 1.0: "Normal", 1.1: "Fast", 1.2: "Fast", 1.3: "Fast", 1.4: "Very Fast", 1.5: "Very Fast"}
+    current_label = speed_labels.get(round(st.session_state.speech_speed, 1), "Custom")
+    st.write(f"Current Speed: {current_label}")
     
     st.header("Passage Pool Status")
     passages, current_index = load_passages_data()
@@ -340,12 +355,27 @@ def generate_quiz(passage, vocab_dict, passage_data=None):
 
 # Function for text-to-speech
 def text_to_speech(text):
-    tts = gTTS(text=text, lang="en")
+    tts = gTTS(text=text, lang="en", slow=st.session_state.speech_speed <= 0.8)
     audio_file = io.BytesIO()
     tts.write_to_fp(audio_file)
     audio_file.seek(0)
     audio_b64 = base64.b64encode(audio_file.read()).decode()
-    audio_html = f'<audio controls><source src="data:audio/mp3;base64,{audio_b64}" type="audio/mp3"></audio>'
+    
+    # Add speed control via HTML audio playback rate
+    playback_rate = st.session_state.speech_speed if st.session_state.speech_speed > 0.8 else 1.0
+    audio_html = f'''
+    <audio controls onloadstart="this.playbackRate = {playback_rate};">
+        <source src="data:audio/mp3;base64,{audio_b64}" type="audio/mp3">
+    </audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {{
+            var audioElements = document.querySelectorAll('audio');
+            audioElements.forEach(function(audio) {{
+                audio.playbackRate = {playback_rate};
+            }});
+        }});
+    </script>
+    '''
     return audio_html
 
 # Function to split text into sentences

@@ -1,256 +1,422 @@
 {
   "passages": [
     {
-      "passage": "Once upon a time in a magical forest, there lived a curious little squirrel named Nibbles. Nibbles loved to explore and discover new things. One sunny day, he stumbled upon a hidden cave. As he entered, he saw sparkling crystals that shone like stars! Nibbles was amazed and wanted to share this secret with his friends. He hurried back to tell them about the cave and the dazzling treasures inside. His friends, a wise owl and a playful rabbit, decided to join him. Together, they ventured into the cave, ready for an adventure full of surprises!",
+      "passage": "Once upon a time in a sunny village, there lived a curious little cat named Whiskers. Whiskers loved to explore new places. One day, he discovered a hidden garden filled with colorful flowers and buzzing bees! As he wandered around, he saw a shimmering butterfly dancing in the air. Whiskers tried to catch it, but the butterfly flew high into the sky. Feeling playful, he decided to chase after it. With a big leap, he jumped over a tiny stream and landed softly on the grass. Whiskers giggled with joy, knowing that every day held a new adventure waiting for him!",
       "vocabulary": {
-        "curious": "wanting to learn or know more about something",
-        "stumbled": "to accidentally find or discover something",
-        "sparkling": "shining brightly with flashes of light",
-        "dazzling": "extremely bright and beautiful, hard to look at",
-        "venture": "to go somewhere new and possibly risky"
+        "curious": "wanting to know or learn more about something.",
+        "discover": "to find something for the first time.",
+        "shimmering": "shining with a flickering light.",
+        "adventure": "an exciting experience or journey.",
+        "wandered": "to walk around without a clear destination."
       },
       "questions": [
-        "What did Nibbles discover in the hidden cave?",
-        "Who were Nibbles' friends that joined him on the adventure?",
-        "What was Nibbles' reaction upon finding the cave and its treasures?"
+        "What did Whiskers discover while exploring?",
+        "What did Whiskers try to catch in the hidden garden?",
+        "How did Whiskers feel about his adventures?"
       ],
       "quiz": [
         {
-          "question": "What does the word 'curious' mean in the context of the passage?",
+          "question": "What does the word 'curious' mean in the passage?",
           "options": [
             {
-              "option": "Wanting to learn or know more about something",
+              "option": "Wanting to know or learn more about something.",
               "is_correct": true
             },
             {
-              "option": "Feeling scared or nervous about something",
+              "option": "Feeling tired and sleepy.",
               "is_correct": false
             },
             {
-              "option": "Being uninterested in surroundings",
+              "option": "Having a strong dislike for something.",
               "is_correct": false
             },
             {
-              "option": "Having a strong desire to eat",
+              "option": "Being afraid of new experiences.",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "What does the word 'stumbled' imply about Nibbles' discovery?",
+          "question": "What does 'discover' mean in the context of the passage?",
           "options": [
             {
-              "option": "He carefully planned to find the cave",
-              "is_correct": false
-            },
-            {
-              "option": "He accidentally found the cave",
+              "option": "To find something for the first time.",
               "is_correct": true
             },
             {
-              "option": "He was searching for the cave all along",
+              "option": "To lose something important.",
               "is_correct": false
             },
             {
-              "option": "He ignored the cave and moved on",
+              "option": "To create something new.",
+              "is_correct": false
+            },
+            {
+              "option": "To share something with others.",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "In the passage, what does 'dazzling' describe?",
+          "question": "What does the term 'shimmering' describe in the passage?",
           "options": [
             {
-              "option": "The darkness of the cave",
-              "is_correct": false
-            },
-            {
-              "option": "The ordinary stones on the ground",
-              "is_correct": false
-            },
-            {
-              "option": "The beauty of the sparkling crystals",
+              "option": "Shining with a flickering light.",
               "is_correct": true
             },
             {
-              "option": "The size of the cave entrance",
+              "option": "Being dull and lifeless.",
+              "is_correct": false
+            },
+            {
+              "option": "Being extremely dark and heavy.",
+              "is_correct": false
+            },
+            {
+              "option": "Having a smooth and flat surface.",
               "is_correct": false
             }
           ]
         }
       ],
       "status": "complete",
-      "created_at": "2025-06-10T16:55:55.392665",
-      "id": 1
+      "created_at": "2025-06-10T17:13:41.890744",
+      "id": 6
     },
     {
-      "passage": "In a small, colorful village, there lived a curious little squirrel named Sammy. Sammy had a bright, bushy tail and loved to explore every corner of the village. One sunny day, he decided to embark on an adventure. He scampered through the lush green forest, where he discovered a sparkling stream. The water glistened in the sunlight like diamonds! Sammy was so excited that he started to dance around the stream. Suddenly, he spotted a shiny object half-buried in the sand. With a quick dig, he uncovered a beautiful, golden acorn! Sammy knew this was no ordinary acorn. It was magical!",
+      "passage": "Once upon a time in a magical forest, there lived a curious squirrel named Sammy. Sammy loved to explore and discover new things. One sunny day, he found a shiny object on the ground. It was a golden acorn! Sammy was amazed. He had never seen anything like it before. \"I must show my friends!\" he exclaimed. Sammy rushed to find his pals, the wise owl Olivia and the playful rabbit Ruby. They all gathered around the golden acorn, wondering where it came from. \"Maybe it’s a treasure from a faraway land!\" suggested Olivia. Excited, they decided to search for more hidden treasures together!",
       "vocabulary": {
-        "curious": "Wanting to learn or know more about something.",
-        "scampered": "To run quickly and lightly.",
-        "lush": "Full of healthy green plants or grass.",
-        "glistened": "To shine with a sparkling light.",
-        "magical": "Something that seems special or wonderful, like magic."
+        "curious": "wanting to learn or know more about something.",
+        "explore": "to travel around a place to see what it is like.",
+        "amazed": "very surprised or impressed.",
+        "exclaimed": "to say something suddenly and loudly, usually because you are excited.",
+        "treasure": "valuable things that are worth a lot of money."
       },
       "questions": [
-        "What did Sammy discover while exploring the forest?",
-        "How did Sammy react when he found the golden acorn?",
-        "What made the acorn Sammy found different from regular acorns?"
+        "What did Sammy the squirrel discover in the forest?",
+        "Who were Sammy's friends that he showed the golden acorn to?",
+        "What did Olivia suggest about the origin of the golden acorn?"
       ],
       "quiz": [
         {
-          "question": "What does the word 'curious' mean in the context of the passage?",
+          "question": "What does the word 'curious' mean in the passage?",
           "options": [
             {
               "option": "Wanting to learn or know more about something.",
               "is_correct": true
             },
             {
-              "option": "Being uninterested in surroundings.",
+              "option": "Being uninterested or indifferent.",
               "is_correct": false
             },
             {
-              "option": "Showing sadness and disappointment.",
+              "option": "Feeling angry or upset.",
               "is_correct": false
             },
             {
-              "option": "Feeling bored and restless.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "question": "What does 'scampered' mean as used in the passage?",
-          "options": [
-            {
-              "option": "To walk slowly and carefully.",
-              "is_correct": false
-            },
-            {
-              "option": "To run quickly and lightly.",
-              "is_correct": true
-            },
-            {
-              "option": "To sit quietly and think.",
-              "is_correct": false
-            },
-            {
-              "option": "To jump high into the air.",
+              "option": "Having a lot of friends.",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "What does the word 'glistened' imply about the water in the passage?",
+          "question": "What does 'explore' mean in the context of the passage?",
           "options": [
             {
-              "option": "It was dirty and murky.",
-              "is_correct": false
-            },
-            {
-              "option": "It shone with a sparkling light.",
+              "option": "To travel around a place to see what it is like.",
               "is_correct": true
             },
             {
-              "option": "It was very cold and uninviting.",
+              "option": "To stay in one place and relax.",
               "is_correct": false
             },
             {
-              "option": "It had a dull and lifeless appearance.",
+              "option": "To collect items for a project.",
+              "is_correct": false
+            },
+            {
+              "option": "To read about a place in a book.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does 'exclaimed' imply when Sammy found the acorn?",
+          "options": [
+            {
+              "option": "To say something suddenly and loudly, usually because you are excited.",
+              "is_correct": true
+            },
+            {
+              "option": "To whisper quietly to oneself.",
+              "is_correct": false
+            },
+            {
+              "option": "To ignore something completely.",
+              "is_correct": false
+            },
+            {
+              "option": "To argue with someone about something.",
               "is_correct": false
             }
           ]
         }
       ],
       "status": "complete",
-      "created_at": "2025-06-10T16:56:55.548299",
+      "created_at": "2025-06-10T17:09:27.410816",
       "id": 2
     },
     {
-      "passage": "In a small town, there lived a curious squirrel named Sammy. Sammy loved to explore the forest and discover new things. One sunny day, he found a shiny, golden acorn hidden under a pile of leaves. \"Wow! This must be a magical acorn!\" he exclaimed. He decided to take it to his friend, Bella the rabbit. Bella was known for her wisdom. When she saw the acorn, her eyes widened in surprise. \"This acorn is extraordinary! It could grant us a wish!\" she said. Sammy and Bella thought long and hard about what to wish for. They wanted to make their forest a happier place for all their friends!",
+      "passage": "One sunny afternoon, a little girl named Mia found a shiny, round object in her backyard. It was a magical marble! When she picked it up, the marble began to glow and sparkle. Suddenly, Mia was whisked away to a land filled with colorful creatures. There were singing flowers, dancing butterflies, and even a friendly dragon named Sparky! Mia laughed as she played with her new friends. They had a picnic with rainbow sandwiches and juice that fizzed like soda. As the sun began to set, the marble glowed again, and Mia knew it was time to go home. She waved goodbye, promising to return soon!",
       "vocabulary": {
-        "curious": "wanting to learn or know more about something.",
-        "extraordinary": "very unusual or remarkable; something special.",
-        "exclaimed": "to say something suddenly and loudly because of strong feelings.",
-        "wisdom": "the ability to make good choices based on knowledge and experience.",
-        "grant": "to give something that is asked for."
+        "whisked": "To be moved quickly and suddenly.",
+        "sparkle": "To shine brightly with flashes of light.",
+        "creatures": "Living beings, like animals or magical beings.",
+        "fizzed": "To make a bubbling sound like soda.",
+        "picnic": "A meal eaten outdoors, usually with friends or family."
       },
       "questions": [
-        "What did Sammy the squirrel find in the forest?",
-        "Who did Sammy take the golden acorn to for advice?",
-        "What did Sammy and Bella hope to achieve with their wish?"
+        "What did Mia find in her backyard that was magical?",
+        "What kinds of creatures did Mia encounter in the magical land?",
+        "What did Mia and her new friends have for their picnic?"
       ],
       "quiz": [
         {
-          "question": "What does the word 'curious' mean in the context of the passage?",
+          "question": "What does the word 'whisked' mean in the context of the passage?",
           "options": [
             {
-              "option": "Eager to learn or know more about something.",
+              "option": "To be moved slowly and gently.",
+              "is_correct": false
+            },
+            {
+              "option": "To be moved quickly and suddenly.",
               "is_correct": true
             },
             {
-              "option": "Feeling sad or unhappy.",
+              "option": "To be left behind.",
               "is_correct": false
             },
             {
-              "option": "Being cautious about the unknown.",
-              "is_correct": false
-            },
-            {
-              "option": "Having a strong desire to travel.",
+              "option": "To be carried away peacefully.",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "What does 'extraordinary' imply when Bella describes the acorn?",
+          "question": "In the passage, what does 'sparkle' refer to?",
           "options": [
             {
-              "option": "Ordinary and common.",
-              "is_correct": false
-            },
-            {
-              "option": "Very unusual or remarkable; something special.",
+              "option": "To shine brightly with flashes of light.",
               "is_correct": true
             },
             {
-              "option": "Easily forgotten or overlooked.",
+              "option": "To make a dull sound.",
               "is_correct": false
             },
             {
-              "option": "Something that is dangerous or harmful.",
+              "option": "To appear cloudy and unclear.",
+              "is_correct": false
+            },
+            {
+              "option": "To reflect a dark color.",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "What does 'exclaimed' mean in the passage when Sammy finds the acorn?",
+          "question": "What does the word 'creatures' refer to in the passage?",
           "options": [
             {
-              "option": "To say something quietly and calmly.",
+              "option": "Non-living objects.",
               "is_correct": false
             },
             {
-              "option": "To say something suddenly and loudly due to strong feelings.",
+              "option": "Living beings, like animals or magical beings.",
               "is_correct": true
             },
             {
-              "option": "To whisper something in surprise.",
+              "option": "Plants that grow in gardens.",
               "is_correct": false
             },
             {
-              "option": "To write something down for future reference.",
+              "option": "Inanimate objects that can move.",
               "is_correct": false
             }
           ]
         }
       ],
       "status": "complete",
-      "created_at": "2025-06-10T16:57:39.758435",
+      "created_at": "2025-06-10T17:10:41.953965",
       "id": 3
+    },
+    {
+      "passage": "One sunny day, Emma and her dog Max decided to go on an adventure in the woods behind their house. As they walked, they discovered a secret path covered with colorful leaves. Curious, they followed it until they found a sparkling creek. The water was so clear that they could see tiny fish swimming happily. Emma and Max played near the water, splashing and laughing. Suddenly, they heard a mysterious sound! It was a family of ducks quacking as they waddled by. Emma smiled and thought, \"This is the best day ever!\" They spent the afternoon exploring, making memories, and enjoying nature together.",
+      "vocabulary": {
+        "adventure": "An exciting journey or experience.",
+        "curious": "Eager to learn or know something.",
+        "sparkling": "Shining brightly with flashes of light.",
+        "mysterious": "Something that is strange and hard to understand.",
+        "waddled": "To walk with short steps, moving side to side like a duck."
+      },
+      "questions": [
+        "What did Emma and Max discover while walking in the woods?",
+        "What did Emma and Max see in the sparkling creek?",
+        "What sound interrupted Emma and Max's playtime near the water?"
+      ],
+      "quiz": [
+        {
+          "question": "What does the word 'adventure' mean in the context of the passage?",
+          "options": [
+            {
+              "option": "A boring routine",
+              "is_correct": false
+            },
+            {
+              "option": "An exciting journey or experience",
+              "is_correct": true
+            },
+            {
+              "option": "A dangerous situation",
+              "is_correct": false
+            },
+            {
+              "option": "A peaceful day at home",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does 'curious' imply about Emma and Max's behavior?",
+          "options": [
+            {
+              "option": "They were uninterested in their surroundings",
+              "is_correct": false
+            },
+            {
+              "option": "They were eager to learn or know something",
+              "is_correct": true
+            },
+            {
+              "option": "They were afraid of what they might find",
+              "is_correct": false
+            },
+            {
+              "option": "They were tired from their walk",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "In the passage, what does 'waddled' describe?",
+          "options": [
+            {
+              "option": "Walking quickly and smoothly",
+              "is_correct": false
+            },
+            {
+              "option": "Walking with short steps, moving side to side like a duck",
+              "is_correct": true
+            },
+            {
+              "option": "Running fast in a straight line",
+              "is_correct": false
+            },
+            {
+              "option": "Jumping from one place to another",
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "status": "complete",
+      "created_at": "2025-06-10T17:11:32.789156",
+      "id": 4
+    },
+    {
+      "passage": "Once upon a time in a colorful forest, there lived a clever little fox named Felix. Felix loved to explore and discover new things. One sunny day, he found a mysterious cave hidden behind some bushes. Curiosity sparkled in his eyes as he tiptoed inside. The cave was filled with shimmering crystals that glowed like stars! Felix marveled at their beauty and decided to collect some to show his friends. But suddenly, he heard a soft whisper. \"Who dares to enter my domain?\" a wise old owl asked. Felix gulped but bravely replied, \"It’s me, Felix! I just wanted to see the magic inside!\" The owl smiled, impressed by Felix's courage, and invited him to learn about the enchanted crystals. From that day on, Felix not only shared the crystals with his friends but also the magical stories from the wise owl. \n\nAnd so, the forest became a place of wonder and friendship!",
+      "vocabulary": {
+        "curiosity": "A strong desire to learn or know more about something.",
+        "mysterious": "Something that is strange or hard to understand.",
+        "marveled": "To be filled with wonder or amazement.",
+        "domain": "An area owned or controlled by someone.",
+        "enchanted": "Something that is magical or filled with charm."
+      },
+      "questions": [
+        "What did Felix discover when he entered the cave?",
+        "How did the wise old owl react to Felix's presence in the cave?",
+        "What did Felix do with the crystals after his encounter with the owl?"
+      ],
+      "quiz": [
+        {
+          "question": "What does 'curiosity' mean?",
+          "options": [
+            {
+              "option": "A strong desire to learn or know more about something.",
+              "is_correct": true
+            },
+            {
+              "option": "A feeling of sadness or disappointment.",
+              "is_correct": false
+            },
+            {
+              "option": "A state of being confused or lost.",
+              "is_correct": false
+            },
+            {
+              "option": "A type of animal found in forests.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What is the meaning of 'mysterious'?",
+          "options": [
+            {
+              "option": "Something that is strange or hard to understand.",
+              "is_correct": true
+            },
+            {
+              "option": "Something that is bright and colorful.",
+              "is_correct": false
+            },
+            {
+              "option": "Something that is easy to comprehend.",
+              "is_correct": false
+            },
+            {
+              "option": "Something that is commonly known.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does 'enchanted' refer to?",
+          "options": [
+            {
+              "option": "Something that is magical or filled with charm.",
+              "is_correct": true
+            },
+            {
+              "option": "Something that is dull and boring.",
+              "is_correct": false
+            },
+            {
+              "option": "Something that is broken or damaged.",
+              "is_correct": false
+            },
+            {
+              "option": "Something that is very large and heavy.",
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "status": "complete",
+      "created_at": "2025-06-10T17:12:34.365937",
+      "id": 5
     }
   ],
-  "current_index": 0,
-  "last_updated": "2025-06-10T16:59:45.713614",
-  "total_passages": 3
+  "current_index": 1,
+  "last_updated": "2025-06-10T17:13:41.890744",
+  "total_passages": 5
 }
