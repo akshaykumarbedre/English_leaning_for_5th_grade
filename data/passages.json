@@ -1,0 +1,256 @@
+{
+  "passages": [
+    {
+      "passage": "Once upon a time in a magical forest, there lived a curious little squirrel named Nibbles. Nibbles loved to explore and discover new things. One sunny day, he stumbled upon a hidden cave. As he entered, he saw sparkling crystals that shone like stars! Nibbles was amazed and wanted to share this secret with his friends. He hurried back to tell them about the cave and the dazzling treasures inside. His friends, a wise owl and a playful rabbit, decided to join him. Together, they ventured into the cave, ready for an adventure full of surprises!",
+      "vocabulary": {
+        "curious": "wanting to learn or know more about something",
+        "stumbled": "to accidentally find or discover something",
+        "sparkling": "shining brightly with flashes of light",
+        "dazzling": "extremely bright and beautiful, hard to look at",
+        "venture": "to go somewhere new and possibly risky"
+      },
+      "questions": [
+        "What did Nibbles discover in the hidden cave?",
+        "Who were Nibbles' friends that joined him on the adventure?",
+        "What was Nibbles' reaction upon finding the cave and its treasures?"
+      ],
+      "quiz": [
+        {
+          "question": "What does the word 'curious' mean in the context of the passage?",
+          "options": [
+            {
+              "option": "Wanting to learn or know more about something",
+              "is_correct": true
+            },
+            {
+              "option": "Feeling scared or nervous about something",
+              "is_correct": false
+            },
+            {
+              "option": "Being uninterested in surroundings",
+              "is_correct": false
+            },
+            {
+              "option": "Having a strong desire to eat",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does the word 'stumbled' imply about Nibbles' discovery?",
+          "options": [
+            {
+              "option": "He carefully planned to find the cave",
+              "is_correct": false
+            },
+            {
+              "option": "He accidentally found the cave",
+              "is_correct": true
+            },
+            {
+              "option": "He was searching for the cave all along",
+              "is_correct": false
+            },
+            {
+              "option": "He ignored the cave and moved on",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "In the passage, what does 'dazzling' describe?",
+          "options": [
+            {
+              "option": "The darkness of the cave",
+              "is_correct": false
+            },
+            {
+              "option": "The ordinary stones on the ground",
+              "is_correct": false
+            },
+            {
+              "option": "The beauty of the sparkling crystals",
+              "is_correct": true
+            },
+            {
+              "option": "The size of the cave entrance",
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "status": "complete",
+      "created_at": "2025-06-10T16:55:55.392665",
+      "id": 1
+    },
+    {
+      "passage": "In a small, colorful village, there lived a curious little squirrel named Sammy. Sammy had a bright, bushy tail and loved to explore every corner of the village. One sunny day, he decided to embark on an adventure. He scampered through the lush green forest, where he discovered a sparkling stream. The water glistened in the sunlight like diamonds! Sammy was so excited that he started to dance around the stream. Suddenly, he spotted a shiny object half-buried in the sand. With a quick dig, he uncovered a beautiful, golden acorn! Sammy knew this was no ordinary acorn. It was magical!",
+      "vocabulary": {
+        "curious": "Wanting to learn or know more about something.",
+        "scampered": "To run quickly and lightly.",
+        "lush": "Full of healthy green plants or grass.",
+        "glistened": "To shine with a sparkling light.",
+        "magical": "Something that seems special or wonderful, like magic."
+      },
+      "questions": [
+        "What did Sammy discover while exploring the forest?",
+        "How did Sammy react when he found the golden acorn?",
+        "What made the acorn Sammy found different from regular acorns?"
+      ],
+      "quiz": [
+        {
+          "question": "What does the word 'curious' mean in the context of the passage?",
+          "options": [
+            {
+              "option": "Wanting to learn or know more about something.",
+              "is_correct": true
+            },
+            {
+              "option": "Being uninterested in surroundings.",
+              "is_correct": false
+            },
+            {
+              "option": "Showing sadness and disappointment.",
+              "is_correct": false
+            },
+            {
+              "option": "Feeling bored and restless.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does 'scampered' mean as used in the passage?",
+          "options": [
+            {
+              "option": "To walk slowly and carefully.",
+              "is_correct": false
+            },
+            {
+              "option": "To run quickly and lightly.",
+              "is_correct": true
+            },
+            {
+              "option": "To sit quietly and think.",
+              "is_correct": false
+            },
+            {
+              "option": "To jump high into the air.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does the word 'glistened' imply about the water in the passage?",
+          "options": [
+            {
+              "option": "It was dirty and murky.",
+              "is_correct": false
+            },
+            {
+              "option": "It shone with a sparkling light.",
+              "is_correct": true
+            },
+            {
+              "option": "It was very cold and uninviting.",
+              "is_correct": false
+            },
+            {
+              "option": "It had a dull and lifeless appearance.",
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "status": "complete",
+      "created_at": "2025-06-10T16:56:55.548299",
+      "id": 2
+    },
+    {
+      "passage": "In a small town, there lived a curious squirrel named Sammy. Sammy loved to explore the forest and discover new things. One sunny day, he found a shiny, golden acorn hidden under a pile of leaves. \"Wow! This must be a magical acorn!\" he exclaimed. He decided to take it to his friend, Bella the rabbit. Bella was known for her wisdom. When she saw the acorn, her eyes widened in surprise. \"This acorn is extraordinary! It could grant us a wish!\" she said. Sammy and Bella thought long and hard about what to wish for. They wanted to make their forest a happier place for all their friends!",
+      "vocabulary": {
+        "curious": "wanting to learn or know more about something.",
+        "extraordinary": "very unusual or remarkable; something special.",
+        "exclaimed": "to say something suddenly and loudly because of strong feelings.",
+        "wisdom": "the ability to make good choices based on knowledge and experience.",
+        "grant": "to give something that is asked for."
+      },
+      "questions": [
+        "What did Sammy the squirrel find in the forest?",
+        "Who did Sammy take the golden acorn to for advice?",
+        "What did Sammy and Bella hope to achieve with their wish?"
+      ],
+      "quiz": [
+        {
+          "question": "What does the word 'curious' mean in the context of the passage?",
+          "options": [
+            {
+              "option": "Eager to learn or know more about something.",
+              "is_correct": true
+            },
+            {
+              "option": "Feeling sad or unhappy.",
+              "is_correct": false
+            },
+            {
+              "option": "Being cautious about the unknown.",
+              "is_correct": false
+            },
+            {
+              "option": "Having a strong desire to travel.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does 'extraordinary' imply when Bella describes the acorn?",
+          "options": [
+            {
+              "option": "Ordinary and common.",
+              "is_correct": false
+            },
+            {
+              "option": "Very unusual or remarkable; something special.",
+              "is_correct": true
+            },
+            {
+              "option": "Easily forgotten or overlooked.",
+              "is_correct": false
+            },
+            {
+              "option": "Something that is dangerous or harmful.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does 'exclaimed' mean in the passage when Sammy finds the acorn?",
+          "options": [
+            {
+              "option": "To say something quietly and calmly.",
+              "is_correct": false
+            },
+            {
+              "option": "To say something suddenly and loudly due to strong feelings.",
+              "is_correct": true
+            },
+            {
+              "option": "To whisper something in surprise.",
+              "is_correct": false
+            },
+            {
+              "option": "To write something down for future reference.",
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "status": "complete",
+      "created_at": "2025-06-10T16:57:39.758435",
+      "id": 3
+    }
+  ],
+  "current_index": 0,
+  "last_updated": "2025-06-10T16:59:45.713614",
+  "total_passages": 3
+}
