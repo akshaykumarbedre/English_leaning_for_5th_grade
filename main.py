@@ -263,7 +263,7 @@ with st.sidebar:
 passage_prompt = PromptTemplate(
     input_variables=["grade_level"],
     template="""Generate a short, engaging reading passage suitable for a {grade_level} grader. 
-    The passage should be fun, use simple vocabulary, and include 3-5 new words a 4th grader might not know.
+    The passage should be fun, use simple vocabulary, and include 3-5 new words a 2th grader might not know.
     Return the passage and vocabulary words with their definitions."""
 )
 
@@ -288,7 +288,7 @@ quiz_prompt = PromptTemplate(
 # Updated function to generate passage and vocabulary
 def generate_passage():
     try:
-        response = passage_model.invoke(passage_prompt.format(grade_level="4th"))
+        response = passage_model.invoke(passage_prompt.format(grade_level="2th"))
         
         # Prepare data for JSON storage
         passage_data = {
