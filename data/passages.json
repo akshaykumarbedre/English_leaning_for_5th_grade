@@ -1,422 +1,412 @@
 {
   "passages": [
     {
-      "passage": "Once upon a time in a colorful forest, there lived a curious squirrel named Sammy. Sammy loved to explore and discover new things. One sunny day, he found a sparkling river that he had never seen before. Excited, he scampered down to the water's edge. To his surprise, he saw fish jumping and butterflies fluttering around. Sammy decided to build a little boat from leaves and twigs. He wanted to sail across the river and see what was on the other side. With a big splash, he pushed his boat into the water and began his adventure!",
+      "passage": "Once upon a time, in a lively forest, there lived a cheerful squirrel named Sammy. Sammy loved to collect acorns. One day, he discovered a shiny, golden acorn hidden under a big tree. Sammy was amazed! He showed it to his friends, Lucy the rabbit and Benny the bird. They decided to have a treasure hunt to find more shiny acorns. As they searched, they laughed and played together, making wonderful memories. Sammy learned that sharing treasures with friends is even more fun than keeping them all to himself!",
       "vocabulary": {
-        "curious": "wanting to know more about something",
-        "sparkling": "shining brightly with a lot of light",
-        "scampered": "ran quickly with small steps",
-        "fluttering": "moving quickly and lightly, like a butterfly",
-        "adventure": "an exciting or unusual experience"
+        "lively": "full of energy and excitement",
+        "discover": "to find something new or special",
+        "treasure": "something very special or valuable"
       },
       "questions": [
-        "What did Sammy the squirrel find one sunny day in the forest?",
-        "What materials did Sammy use to build his boat?",
-        "What was Sammy's goal in sailing across the river?"
+        "What did Sammy the squirrel discover under the big tree?",
+        "Who were Sammy's friends that joined him on the treasure hunt?",
+        "What lesson did Sammy learn by the end of the story?"
       ],
       "quiz": [
         {
-          "question": "What does the word 'curious' mean in the context of the passage?",
+          "question": "What does the word 'lively' mean in the context of the passage?",
           "options": [
             {
-              "option": "Wanting to know more about something",
+              "option": "Full of energy and excitement",
               "is_correct": true
             },
             {
-              "option": "Being afraid of new things",
+              "option": "Quiet and calm",
               "is_correct": false
             },
             {
-              "option": "Feeling tired or bored",
+              "option": "Boring and dull",
               "is_correct": false
             },
             {
-              "option": "Having a lot of friends",
+              "option": "Empty and deserted",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "What does 'sparkling' refer to in the passage?",
+          "question": "In the passage, what does 'discover' mean?",
           "options": [
             {
-              "option": "Shining brightly with a lot of light",
+              "option": "To lose something important",
+              "is_correct": false
+            },
+            {
+              "option": "To find something new or special",
               "is_correct": true
             },
             {
-              "option": "Being dull and dark",
+              "option": "To ignore something",
               "is_correct": false
             },
             {
-              "option": "Moving slowly and quietly",
-              "is_correct": false
-            },
-            {
-              "option": "Making a loud noise",
+              "option": "To hide something away",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "What does 'scampered' mean as used in the passage?",
+          "question": "What is a 'treasure' as described in the passage?",
           "options": [
             {
-              "option": "Ran quickly with small steps",
+              "option": "Something very special or valuable",
               "is_correct": true
             },
             {
-              "option": "Walked slowly and carefully",
+              "option": "Something common and unimportant",
               "is_correct": false
             },
             {
-              "option": "Sat down to rest",
+              "option": "A tool for digging",
               "is_correct": false
             },
             {
-              "option": "Jumped high into the air",
+              "option": "A type of food",
               "is_correct": false
             }
           ]
         }
       ],
       "status": "complete",
-      "created_at": "2025-06-10T17:24:12.773824",
+      "created_at": "2025-07-12T13:58:37.430071",
       "id": 1
     },
     {
-      "passage": "Once upon a time in a colorful forest, there lived a curious squirrel named Sammy. Sammy loved to explore every nook and cranny of his home. One sunny day, he decided to embark on an exhilarating adventure to find the biggest acorn ever! He scampered through the trees, leaping over sparkling streams and dodging fluffy clouds. Along the way, he met his friend Bella, a wise old owl. Bella told Sammy about a hidden grove where the legendary acorns grew. Excited, Sammy thanked Bella and hurried off to find this magical place. Would he discover the acorn of his dreams? Only time would tell!",
+      "passage": "Once upon a time, in a bright and colorful forest, lived a happy little squirrel named Sammy. Sammy loved to collect acorns. One day, while searching for acorns, he discovered a shiny, blue stone hidden under a bush. Sammy was curious! He wondered if the stone was magical. He decided to take it to his friend, Bella the wise owl. Bella looked at the stone and said, \"This is a special stone! It can grant you one wish!\" Sammy thought hard about what to wish for. He wanted all his friends to come together for a big party!",
       "vocabulary": {
         "curious": "wanting to learn or know more about something.",
-        "exhilarating": "very exciting and fun.",
-        "scampered": "to run quickly and lightly.",
-        "legendary": "famous and admired, often because of stories.",
-        "grove": "a small group of trees."
+        "magical": "something that is very special or has powers.",
+        "discover": "to find something for the first time."
       },
       "questions": [
-        "What was Sammy the squirrel's goal in the story?",
-        "Who did Sammy meet during his adventure, and what did that character tell him?",
-        "What kind of environment does Sammy explore in his quest for the acorn?"
-      ],
-      "quiz": [
-        {
-          "question": "What does the word 'curious' mean in the context of the passage?",
-          "options": [
-            {
-              "option": "Wanting to learn or know more about something.",
-              "is_correct": true
-            },
-            {
-              "option": "Very exciting and fun.",
-              "is_correct": false
-            },
-            {
-              "option": "Famous and admired, often because of stories.",
-              "is_correct": false
-            },
-            {
-              "option": "A small group of trees.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "question": "Which of the following best defines 'exhilarating'?",
-          "options": [
-            {
-              "option": "To run quickly and lightly.",
-              "is_correct": false
-            },
-            {
-              "option": "Very exciting and fun.",
-              "is_correct": true
-            },
-            {
-              "option": "A small group of trees.",
-              "is_correct": false
-            },
-            {
-              "option": "Famous and admired, often because of stories.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "question": "In the passage, what does 'grove' refer to?",
-          "options": [
-            {
-              "option": "A legendary story.",
-              "is_correct": false
-            },
-            {
-              "option": "A small group of trees.",
-              "is_correct": true
-            },
-            {
-              "option": "An exciting adventure.",
-              "is_correct": false
-            },
-            {
-              "option": "To scamper quickly.",
-              "is_correct": false
-            }
-          ]
-        }
-      ],
-      "status": "complete",
-      "created_at": "2025-06-10T17:24:12.960825",
-      "id": 2
-    },
-    {
-      "passage": "Once upon a time in a colorful forest, there was a clever fox named Felix. Felix loved to explore and discover new things. One day, he found a mysterious cave hidden behind a waterfall. Curious and excited, Felix decided to venture inside. The cave sparkled with shiny crystals and the walls glowed like the stars! As he wandered deeper, he stumbled upon a sleeping dragon. Instead of being scared, Felix whispered, \"Hello, great dragon! I come in peace!\" The dragon awakened and smiled, revealing a treasure of golden coins. Felix and the dragon became friends and shared stories together, creating a magical bond that lasted forever.",
-      "vocabulary": {
-        "curious": "wanting to learn or know more about something.",
-        "mysterious": "something that is strange or hard to understand.",
-        "venture": "to go somewhere that is exciting or a little risky.",
-        "sparkle": "to shine with bright, flickering light.",
-        "bond": "a strong connection or friendship between people."
-      },
-      "questions": [
-        "What did Felix find hidden behind the waterfall?",
-        "How did Felix react upon discovering the dragon in the cave?",
-        "What did Felix and the dragon do together after they met?"
-      ],
-      "quiz": [
-        {
-          "question": "What does the word 'curious' mean in the context of the passage?",
-          "options": [
-            {
-              "option": "Wanting to learn or know more about something.",
-              "is_correct": true
-            },
-            {
-              "option": "Feeling scared or afraid.",
-              "is_correct": false
-            },
-            {
-              "option": "Being uninterested or apathetic.",
-              "is_correct": false
-            },
-            {
-              "option": "Having a strong dislike for something.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "question": "In the passage, what does 'mysterious' imply about the cave?",
-          "options": [
-            {
-              "option": "It is strange or hard to understand.",
-              "is_correct": true
-            },
-            {
-              "option": "It is very well known and familiar.",
-              "is_correct": false
-            },
-            {
-              "option": "It is brightly lit and welcoming.",
-              "is_correct": false
-            },
-            {
-              "option": "It is filled with friendly creatures.",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "question": "What does the word 'venture' suggest about Felix's actions?",
-          "options": [
-            {
-              "option": "To go somewhere that is exciting or a little risky.",
-              "is_correct": true
-            },
-            {
-              "option": "To stay in a safe place without exploring.",
-              "is_correct": false
-            },
-            {
-              "option": "To run away from danger quickly.",
-              "is_correct": false
-            },
-            {
-              "option": "To find something without trying.",
-              "is_correct": false
-            }
-          ]
-        }
-      ],
-      "status": "complete",
-      "created_at": "2025-07-12T13:05:01.820854",
-      "id": 6
-    },
-    {
-      "passage": "Once upon a time, in a colorful forest, lived a cheerful squirrel named Sammy. Sammy loved to explore and find new treasures. One sunny day, he discovered a shiny key buried under a pile of leaves. Sammy was curious. \"What could this key unlock?\" he wondered. With excitement, he ran through the forest, asking his friends for help. A wise owl named Oliver said, \"Keys often open secret doors!\" Sammy's eyes sparkled with joy. Together, they searched high and low until they found an old tree with a tiny door. Sammy used the key, and to his surprise, the door creaked open to reveal a hidden treasure of acorns!",
-      "vocabulary": {
-        "curious": "wanting to know more about something",
-        "treasure": "valuable items that are kept safe",
-        "sparkle": "to shine brightly with small flashes of light",
-        "creak": "to make a loud, squeaky sound when moving",
-        "unlock": "to open something that was locked"
-      },
-      "questions": [
-        "What did Sammy the squirrel find buried under the leaves?",
-        "Who did Sammy ask for help in figuring out what the key could unlock?",
-        "What did Sammy discover behind the tiny door in the old tree?"
+        "What did Sammy the squirrel discover while searching for acorns?",
+        "Who did Sammy take the blue stone to for advice?",
+        "What did Sammy wish for after learning about the stone's magical properties?"
       ],
       "quiz": [
         {
           "question": "What does the word 'curious' mean in the passage?",
           "options": [
             {
-              "option": "Eager to learn or know something",
+              "option": "Wanting to learn or know more about something.",
               "is_correct": true
             },
             {
-              "option": "Feeling sad or upset",
+              "option": "Feeling happy or content.",
               "is_correct": false
             },
             {
-              "option": "Being quiet and reserved",
+              "option": "Being afraid or scared.",
               "is_correct": false
             },
             {
-              "option": "Wanting to leave quickly",
+              "option": "Having a lot of energy.",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "What does 'treasure' refer to in the context of the passage?",
+          "question": "In the context of the passage, what does 'magical' refer to?",
+          "options": [
+            {
+              "option": "Something that is very special or has powers.",
+              "is_correct": true
+            },
+            {
+              "option": "Something that is old and worn out.",
+              "is_correct": false
+            },
+            {
+              "option": "Something that is common and ordinary.",
+              "is_correct": false
+            },
+            {
+              "option": "Something that is boring and dull.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does 'discover' mean as used in the story?",
+          "options": [
+            {
+              "option": "To find something for the first time.",
+              "is_correct": true
+            },
+            {
+              "option": "To lose something important.",
+              "is_correct": false
+            },
+            {
+              "option": "To break something into pieces.",
+              "is_correct": false
+            },
+            {
+              "option": "To ignore something completely.",
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "status": "complete",
+      "created_at": "2025-07-12T13:58:40.739906",
+      "id": 2
+    },
+    {
+      "passage": "Once upon a time, in a colorful garden, there lived a tiny, blue butterfly named Bella. Bella loved to flutter from flower to flower, sipping sweet nectar. One sunny day, she met a wise old turtle named Timmy. Timmy told Bella about a hidden treasure deep in the forest. Excited, Bella asked, \"How can I find it?\" Timmy smiled and said, \"Follow the shimmering path of golden leaves!\" Bella thanked Timmy and zipped off, ready for an adventure. She couldn’t wait to discover the treasure and share it with her friends!",
+      "vocabulary": {
+        "flutter": "to move quickly and lightly, like a bird or butterfly",
+        "nectar": "a sweet liquid found in flowers that insects drink",
+        "treasure": "something very valuable or special"
+      },
+      "questions": [
+        "What kind of creature is Bella and what does she love to do in the garden?",
+        "Who did Bella meet in the garden and what did he tell her about?",
+        "What advice did Timmy give Bella to find the hidden treasure?"
+      ],
+      "quiz": [
+        {
+          "question": "What does the word 'flutter' mean?",
+          "options": [
+            {
+              "option": "To move quickly and lightly, like a bird or butterfly.",
+              "is_correct": true
+            },
+            {
+              "option": "To fly in a straight line at high speed.",
+              "is_correct": false
+            },
+            {
+              "option": "To sit still and observe surroundings.",
+              "is_correct": false
+            },
+            {
+              "option": "To make a loud noise while flying.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What is 'nectar'?",
+          "options": [
+            {
+              "option": "A sweet liquid found in flowers that insects drink.",
+              "is_correct": true
+            },
+            {
+              "option": "A type of butterfly that lives in gardens.",
+              "is_correct": false
+            },
+            {
+              "option": "A type of treasure buried in the forest.",
+              "is_correct": false
+            },
+            {
+              "option": "A color used to describe flowers.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does 'treasure' refer to?",
+          "options": [
+            {
+              "option": "Something very valuable or special.",
+              "is_correct": true
+            },
+            {
+              "option": "An ordinary object found in nature.",
+              "is_correct": false
+            },
+            {
+              "option": "A type of garden decoration.",
+              "is_correct": false
+            },
+            {
+              "option": "A small animal that lives in the forest.",
+              "is_correct": false
+            }
+          ]
+        }
+      ],
+      "status": "complete",
+      "created_at": "2025-07-12T13:58:52.471115",
+      "id": 4
+    },
+    {
+      "passage": "Once upon a time, in a bright green forest, lived a cheerful squirrel named Sammy. Sammy loved to gather acorns. One sunny day, he found a shiny, golden acorn! \"Wow! This is special!\" Sammy exclaimed. He decided to show it to his friends. Sammy invited Lucy the rabbit and Benny the bird to a picnic under the big oak tree. They all brought delicious treats to share. As they munched on snacks, Sammy told stories about his exciting find. The friends laughed and played games until the sun began to set. It was a perfect day in the forest!",
+      "vocabulary": {
+        "acorn": "A small nut from an oak tree that squirrels like to eat.",
+        "cheerful": "Happy and full of joy.",
+        "exciting": "Something that makes you feel very happy or interested."
+      },
+      "questions": [
+        "What did Sammy the squirrel find that was special?",
+        "Who did Sammy invite to the picnic under the big oak tree?",
+        "What activities did Sammy and his friends do during the picnic?"
+      ],
+      "quiz": [
+        {
+          "question": "What does the word 'acorn' refer to?",
           "options": [
             {
               "option": "A type of tree",
               "is_correct": false
             },
             {
-              "option": "A valuable collection of items",
+              "option": "A small nut from an oak tree",
               "is_correct": true
             },
             {
-              "option": "A hidden cave",
+              "option": "A kind of fruit",
               "is_correct": false
             },
             {
-              "option": "A squirrel's home",
+              "option": "A bird species",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "What does the verb 'creak' describe in Sammy's adventure?",
+          "question": "Which of the following best describes someone who is 'cheerful'?",
           "options": [
             {
-              "option": "To shine brightly",
+              "option": "Sad and gloomy",
               "is_correct": false
             },
             {
-              "option": "To make a loud, squeaky sound",
+              "option": "Happy and full of joy",
               "is_correct": true
             },
             {
-              "option": "To run quickly",
+              "option": "Angry and upset",
               "is_correct": false
             },
             {
-              "option": "To hide from others",
+              "option": "Bored and uninterested",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "question": "What does 'exciting' mean in the context of the passage?",
+          "options": [
+            {
+              "option": "Something dull and boring",
+              "is_correct": false
+            },
+            {
+              "option": "Something that makes you feel very happy or interested",
+              "is_correct": true
+            },
+            {
+              "option": "Something that is easy to forget",
+              "is_correct": false
+            },
+            {
+              "option": "Something unpleasant or scary",
               "is_correct": false
             }
           ]
         }
       ],
       "status": "complete",
-      "created_at": "2025-07-12T13:03:06.724764",
+      "created_at": "2025-07-12T13:59:06.551617",
       "id": 6
     },
     {
-      "passage": "Once upon a time in a cheerful little village, there lived a curious squirrel named Sammy. Sammy loved to explore the vast forest nearby. One sunny day, he found a mysterious key sparkling in the grass. \"What could this open?\" he wondered. Sammy decided to embark on an adventure to discover the secret. He scampered through the trees, asking his friends if they knew anything about the key. His best friend, a wise old owl named Oliver, suggested they visit the ancient oak tree. Legends said it held magical treasures! With excitement bubbling inside him, Sammy raced toward the tree, ready to uncover its secrets.",
+      "passage": "Once upon a time, in a sunny little town, there was a cheerful cat named Whiskers. Whiskers loved to explore and find new friends. One day, he discovered a hidden garden filled with colorful flowers and buzzing bees. Whiskers was amazed! He decided to invite all his friends to join him for a picnic. They played games, shared snacks, and enjoyed the beautiful day. Everyone laughed and had so much fun. After the picnic, they promised to come back to the magical garden again!",
       "vocabulary": {
-        "curious": "Wanting to know more about something; eager to learn.",
-        "mysterious": "Something that is strange or difficult to understand.",
-        "adventure": "An exciting or unusual experience.",
-        "scamper": "To run quickly and lightly.",
-        "ancient": "Very old; belonging to a time long ago."
+        "explore": "to look around and find new things",
+        "cheerful": "happy and bright",
+        "magical": "something special that feels like magic"
       },
       "questions": [
-        "What did Sammy the squirrel find in the grass?",
-        "Who is Sammy's best friend and what advice did he give?",
-        "What did the legends say about the ancient oak tree?"
+        "What did Whiskers discover that amazed him?",
+        "What activities did Whiskers and his friends do during the picnic?",
+        "What promise did Whiskers and his friends make after the picnic?"
       ],
       "quiz": [
         {
-          "question": "What does the word 'curious' mean in the context of the passage?",
+          "question": "What does the word 'explore' mean in the context of the passage?",
           "options": [
             {
-              "option": "Wanting to know more about something",
+              "option": "To look around and find new things",
               "is_correct": true
             },
             {
-              "option": "Feeling sad or depressed",
+              "option": "To stay in one place",
               "is_correct": false
             },
             {
-              "option": "Being uninterested or indifferent",
+              "option": "To ignore something",
               "is_correct": false
             },
             {
-              "option": "Experiencing fear or anxiety",
+              "option": "To count items carefully",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "In the passage, what does 'mysterious' refer to?",
+          "question": "How would you best describe a 'cheerful' person?",
           "options": [
             {
-              "option": "Something that is strange or difficult to understand",
+              "option": "Someone who is unhappy and gloomy",
+              "is_correct": false
+            },
+            {
+              "option": "Someone who is happy and bright",
               "is_correct": true
             },
             {
-              "option": "Something that is easy to explain",
+              "option": "Someone who is quiet and reserved",
               "is_correct": false
             },
             {
-              "option": "Something that is very common",
-              "is_correct": false
-            },
-            {
-              "option": "Something that is well-known",
+              "option": "Someone who is angry and upset",
               "is_correct": false
             }
           ]
         },
         {
-          "question": "What is the meaning of 'scamper' as used in the passage?",
+          "question": "What does 'magical' imply about the garden?",
           "options": [
             {
-              "option": "To run quickly and lightly",
+              "option": "It is ordinary and dull",
+              "is_correct": false
+            },
+            {
+              "option": "It is special and feels like magic",
               "is_correct": true
             },
             {
-              "option": "To walk slowly and heavily",
+              "option": "It is a dangerous place",
               "is_correct": false
             },
             {
-              "option": "To sit and wait patiently",
-              "is_correct": false
-            },
-            {
-              "option": "To jump high into the air",
+              "option": "It is very large and empty",
               "is_correct": false
             }
           ]
         }
       ],
       "status": "complete",
-      "created_at": "2025-07-12T13:02:03.947375",
-      "id": 6
+      "created_at": "2025-07-12T14:05:54.794254",
+      "id": 5
     }
   ],
-  "current_index": 2,
-  "last_updated": "2025-07-12T13:10:15.972292",
+  "current_index": 0,
+  "last_updated": "2025-07-12T14:05:54.794254",
   "total_passages": 5
 }

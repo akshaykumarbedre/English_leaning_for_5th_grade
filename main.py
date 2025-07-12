@@ -20,7 +20,7 @@ openai_api_key = os.getenv("OPENAI_API_KEY") or st.secrets["openai_api_key"]
 # Pydantic models for structured output
 class VocabularyWord(BaseModel):
     word: str = Field(description="The vocabulary word")
-    definition: str = Field(description="Simple definition suitable for 5th graders")
+    definition: str = Field(description="Simple definition suitable for 2th graders")
 
 class ReadingPassage(BaseModel):
     passage: str = Field(description="The reading passage content (100 words)")
@@ -118,11 +118,21 @@ def add_or_replace_passage(new_passage_data):
     save_passages_data(passages, current_index)
     return new_passage_data['id']
 
+def remove_current_passage():
+    """Remove the current passage from the JSON file"""
+    if "current_passage_id" in st.session_state:
+        passages, current_index = load_passages_data()
+        # Remove passage with matching ID
+        passages = [p for p in passages if p.get('id') != st.session_state.current_passage_id]
+        save_passages_data(passages, 0)  # Reset index after removal
+        return True
+    return False
+
 # Background generation functions
 def generate_passage_background():
     """Generate a new passage in the background"""
     try:
-        response = passage_model.invoke(passage_prompt.format(grade_level="4th"))
+        response = passage_model.invoke(passage_prompt.format(grade_level="2th"))
         
         # Prepare data for JSON storage
         passage_data = {
@@ -211,30 +221,27 @@ if "generating_in_background" not in st.session_state:
     st.session_state.generating_in_background = False
 if "speech_speed" not in st.session_state:
     st.session_state.speech_speed = 0.8  # Default slow speed
+if "reading_start_time" not in st.session_state:
+    st.session_state.reading_start_time = None
 
 # Sidebar for progress tracking and data management
 with st.sidebar:
     st.header("Your Progress")
     st.write(f"Points: {st.session_state.points}")
-    st.write(f"Passages Completed: {st.session_state.passages_completed}")
-    st.write(f"Vocabulary Learned: {len(st.session_state.vocab_learned)} words")
-    if st.session_state.vocab_learned:
-        st.write("Words Learned:")
-        for word in st.session_state.vocab_learned:
-            st.write(f"- {word}")
     
     st.header("Speech Settings")
     st.session_state.speech_speed = st.slider(
         "Speech Speed", 
-        min_value=0.5, 
-        max_value=1.5, 
+        min_value=0.3, 
+        max_value=1.0, 
         value=st.session_state.speech_speed, 
         step=0.1,
-        help="0.5 = Very Slow, 1.0 = Normal, 1.5 = Fast"
+        help="0.3 = Very Slow with pauses, 1.0 = Normal with pauses"
     )
-    speed_labels = {0.5: "Very Slow", 0.6: "Slow", 0.7: "Slow", 0.8: "Slow", 0.9: "Normal", 1.0: "Normal", 1.1: "Fast", 1.2: "Fast", 1.3: "Fast", 1.4: "Very Fast", 1.5: "Very Fast"}
+    speed_labels = {0.3: "Very Slow", 0.4: "Very Slow", 0.5: "Slow", 0.6: "Slow", 0.7: "Medium", 0.8: "Medium", 0.9: "Normal", 1.0: "Normal"}
     current_label = speed_labels.get(round(st.session_state.speech_speed, 1), "Custom")
     st.write(f"Current Speed: {current_label}")
+    st.write("📝 Note: Speech includes pauses between words for better learning")
     
     st.header("Passage Pool Status")
     passages, current_index = load_passages_data()
@@ -263,7 +270,7 @@ with st.sidebar:
 passage_prompt = PromptTemplate(
     input_variables=["grade_level"],
     template="""Generate a short, engaging reading passage suitable for a {grade_level} grader. 
-    The passage should be fun, use simple vocabulary, and include 3-5 new words a 2th grader might not know.
+    The passage should be fun, use simple vocabulary, and include 1-3 new words a 2th grader might not know.
     Return the passage and vocabulary words with their definitions."""
 )
 
@@ -355,14 +362,19 @@ def generate_quiz(passage, vocab_dict, passage_data=None):
 
 # Function for text-to-speech
 def text_to_speech(text):
-    tts = gTTS(text=text, lang="en", slow=st.session_state.speech_speed <= 0.8)
+    # Add pauses between words for better learning
+    words = text.split()
+    text_with_pauses = " ... ".join(words)  # Add pauses between words
+    
+    # Always use slow speech for learning
+    tts = gTTS(text=text_with_pauses, lang="en", slow=True)
     audio_file = io.BytesIO()
     tts.write_to_fp(audio_file)
     audio_file.seek(0)
     audio_b64 = base64.b64encode(audio_file.read()).decode()
     
-    # Add speed control via HTML audio playback rate
-    playback_rate = st.session_state.speech_speed if st.session_state.speech_speed > 0.8 else 1.0
+    # Set slower playback rate for learning
+    playback_rate = st.session_state.speech_speed * 0.5  # Make it even slower
     audio_html = f'''
     <audio controls onloadstart="this.playbackRate = {playback_rate};">
         <source src="data:audio/mp3;base64,{audio_b64}" type="audio/mp3">
@@ -390,7 +402,7 @@ def split_into_sentences(text):
 # Main app logic
 st.header("Start Your Reading Adventure!")
 
-# Initialize passages on first run
+# # Initialize passages on first run 
 # if st.button("Initialize Passage Pool") or len(load_passages_data()[0]) == 0:
 #     initialize_passages()
 
@@ -405,10 +417,11 @@ if st.button("Get a New Reading Passage"):
         st.session_state.questions = passage_data['questions']
         st.session_state.quiz = passage_data['quiz']
         st.session_state.current_passage_id = passage_data['id']
+        st.session_state.reading_start_time = time.time()  # Start reading timer
         
-        # Update progress
-        st.session_state.passages_completed += 1
-        st.session_state.points += 10
+        # # Update progress
+        # st.session_state.passages_completed += 1
+        # st.session_state.points += 10
         
         # Save progress automatically
         progress_data = {
@@ -420,20 +433,8 @@ if st.button("Get a New Reading Passage"):
         
         st.success(f"Loaded passage {passage_index + 1} from the rotation!")
         
-        # Start background generation for next batch
-        if not st.session_state.generating_in_background:
-            st.session_state.generating_in_background = True
-            
-            def background_task():
-                time.sleep(1)  # Small delay to let UI update
-                generate_passage_background()
-                st.session_state.generating_in_background = False
-            
-            thread = threading.Thread(target=background_task)
-            thread.daemon = True
-            thread.start()
-            
-            st.info("🔄 Generating fresh content in the background for future sessions...")
+        # Don't start background generation here anymore
+        
     else:
         st.error("No passages available. Please initialize the passage pool first.")
 
@@ -461,6 +462,68 @@ if "passage" in st.session_state:
     with col2:
         st.write("Play the entire passage")
 
+    # Done button with reading time check
+    st.write("---")
+    col1, col2 = st.columns([2, 8])
+    with col1:
+        if st.button("✅ Done Reading", key="done_reading"):
+            if st.session_state.reading_start_time:
+                reading_time = time.time() - st.session_state.reading_start_time
+                if reading_time >= 60:  # 1 minute = 60 seconds
+                    st.session_state.points += 2
+                    st.success("Great job! You earned 2 points for reading the passage!")
+                    
+                    # Remove current passage
+                    remove_current_passage()
+                    
+                    # Clear current passage from session
+                    del st.session_state.passage
+                    del st.session_state.vocab_dict
+                    del st.session_state.questions
+                    del st.session_state.quiz
+                    del st.session_state.current_passage_id
+                    st.session_state.reading_start_time = None
+                    
+                    # Save progress
+                    progress_data = {
+                        "points": st.session_state.points,
+                        "passages_completed": st.session_state.passages_completed,
+                        "vocab_learned": st.session_state.vocab_learned
+                    }
+                    save_user_progress(progress_data)
+                    
+                    # Start background generation for new content
+                    if not st.session_state.generating_in_background:
+                        st.session_state.generating_in_background = True
+                        
+                        def background_task():
+                            time.sleep(1)  # Small delay to let UI update
+                            generate_passage_background()
+                            st.session_state.generating_in_background = False
+                        
+                        thread = threading.Thread(target=background_task)
+                        thread.daemon = True
+                        thread.start()
+                        
+                        st.info("🔄 Generating fresh content in the background...")
+                    
+                    st.rerun()
+                else:
+                    remaining_time = 60 - int(reading_time)
+                    st.warning(f"Please spend at least 1 minute reading. You need {remaining_time} more seconds.")
+            else:
+                st.error("Reading time not tracked. Please get a new passage first.")
+    with col2:
+        if st.session_state.reading_start_time:
+            reading_time = time.time() - st.session_state.reading_start_time
+            if reading_time >= 60:
+                st.write("✅ You can now click Done to earn 2 points!")
+            else:
+                remaining_time = 60 - int(reading_time)
+                st.write(f"Keep reading... {remaining_time} seconds remaining to earn points")
+        else:
+            st.write("Click when you're done reading to earn points")
+
     # Vocabulary section
     st.subheader("New Words")
     for word, definition in st.session_state.vocab_dict.items():
@@ -472,67 +535,7 @@ if "passage" in st.session_state:
             st.write(f"**{word}**: {definition}")
             if word not in st.session_state.vocab_learned:
                 st.session_state.vocab_learned.append(word)
-                st.session_state.points += 5  # Award points for learning a word
-
-    # # Comprehension questions
-    # st.subheader("Comprehension Questions")
-    # with st.form("comprehension_form"):
-    #     answers = []
-    #     for i, question in enumerate(st.session_state.questions[:3], 1):
-    #         answer = st.text_input(f"Q{i}: {question}", key=f"q{i}")
-    #         answers.append(answer)
-    #     submitted = st.form_submit_button("Submit Answers")
-    #     if submitted:
-    #         st.session_state.points += 20  # Award points for submitting answers
-    #         st.success("Great job! You earned 20 points for answering the questions!")
-
-    # # Vocabulary quiz
-    # st.subheader("Vocabulary Quiz")
-    # if st.session_state.quiz:
-    #     with st.form("quiz_form"):
-    #         quiz_answers = []
-    #         for i, quiz_question in enumerate(st.session_state.quiz[:3], 1):
-    #             # Handle both structured and JSON loaded formats
-    #             if isinstance(quiz_question, dict):
-    #                 # JSON loaded format
-    #                 options = [opt['option'] for opt in quiz_question['options']]
-    #                 question_text = quiz_question['question']
-    #             else:
-    #                 # Structured format
-    #                 options = [opt.option for opt in quiz_question.options]
-    #                 question_text = quiz_question.question
-                
-    #             answer = st.radio(f"Q{i}: {question_text}", options, key=f"quiz_q{i}")
-    #             quiz_answers.append(answer)
-    #         quiz_submitted = st.form_submit_button("Submit Quiz")
-    #         if quiz_submitted:
-    #             # Check answers and calculate score
-    #             correct_answers = 0
-    #             for i, quiz_question in enumerate(st.session_state.quiz[:3]):
-    #                 selected_option = quiz_answers[i]
-                    
-    #                 if isinstance(quiz_question, dict):
-    #                     # JSON loaded format
-    #                     correct_option = next((opt['option'] for opt in quiz_question['options'] if opt['is_correct']), None)
-    #                 else:
-    #                     # Structured format
-    #                     correct_option = next((opt.option for opt in quiz_question.options if opt.is_correct), None)
-                    
-    #                 if selected_option == correct_option:
-    #                     correct_answers += 1
-                
-    #             score_points = correct_answers * 5
-    #             st.session_state.points += score_points
-                
-    #             # Save quiz score and progress
-    #             progress_data = {
-    #                 "points": st.session_state.points,
-    #                 "passages_completed": st.session_state.passages_completed,
-    #                 "vocab_learned": st.session_state.vocab_learned
-    #             }
-    #             save_user_progress(progress_data)
-                
-    #             st.success(f"Great! You got {correct_answers}/3 correct and earned {score_points} points!")
+                # st.session_state.points += 5  # Award points for learning a word
 
 # Rewards section
 st.header("Your Rewards")
