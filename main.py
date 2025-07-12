@@ -244,20 +244,20 @@ with st.sidebar:
     if st.session_state.generating_in_background:
         st.write("🔄 Generating new content in background...")
     
-    st.header("Data Management")
-    if st.button("Save Progress"):
-        progress_data = {
-            "points": st.session_state.points,
-            "passages_completed": st.session_state.passages_completed,
-            "vocab_learned": st.session_state.vocab_learned
-        }
-        save_user_progress(progress_data)
-        st.success("Progress saved!")
+    # st.header("Data Management")
+    # if st.button("Save Progress"):
+    #     progress_data = {
+    #         "points": st.session_state.points,
+    #         "passages_completed": st.session_state.passages_completed,
+    #         "vocab_learned": st.session_state.vocab_learned
+    #     }
+    #     save_user_progress(progress_data)
+    #     st.success("Progress saved!")
     
-    if st.button("Reset Passage Pool"):
-        if os.path.exists(PASSAGES_FILE):
-            os.remove(PASSAGES_FILE)
-        st.success("Passage pool reset! Refresh to regenerate.")
+    # if st.button("Reset Passage Pool"):
+    #     if os.path.exists(PASSAGES_FILE):
+    #         os.remove(PASSAGES_FILE)
+    #     st.success("Passage pool reset! Refresh to regenerate.")
 
 # Simplified prompt templates for structured output
 passage_prompt = PromptTemplate(
@@ -391,8 +391,8 @@ def split_into_sentences(text):
 st.header("Start Your Reading Adventure!")
 
 # Initialize passages on first run
-if st.button("Initialize Passage Pool") or len(load_passages_data()[0]) == 0:
-    initialize_passages()
+# if st.button("Initialize Passage Pool") or len(load_passages_data()[0]) == 0:
+#     initialize_passages()
 
 if st.button("Get a New Reading Passage"):
     # Get next passage from rotation
@@ -474,65 +474,65 @@ if "passage" in st.session_state:
                 st.session_state.vocab_learned.append(word)
                 st.session_state.points += 5  # Award points for learning a word
 
-    # Comprehension questions
-    st.subheader("Comprehension Questions")
-    with st.form("comprehension_form"):
-        answers = []
-        for i, question in enumerate(st.session_state.questions[:3], 1):
-            answer = st.text_input(f"Q{i}: {question}", key=f"q{i}")
-            answers.append(answer)
-        submitted = st.form_submit_button("Submit Answers")
-        if submitted:
-            st.session_state.points += 20  # Award points for submitting answers
-            st.success("Great job! You earned 20 points for answering the questions!")
+    # # Comprehension questions
+    # st.subheader("Comprehension Questions")
+    # with st.form("comprehension_form"):
+    #     answers = []
+    #     for i, question in enumerate(st.session_state.questions[:3], 1):
+    #         answer = st.text_input(f"Q{i}: {question}", key=f"q{i}")
+    #         answers.append(answer)
+    #     submitted = st.form_submit_button("Submit Answers")
+    #     if submitted:
+    #         st.session_state.points += 20  # Award points for submitting answers
+    #         st.success("Great job! You earned 20 points for answering the questions!")
 
-    # Vocabulary quiz
-    st.subheader("Vocabulary Quiz")
-    if st.session_state.quiz:
-        with st.form("quiz_form"):
-            quiz_answers = []
-            for i, quiz_question in enumerate(st.session_state.quiz[:3], 1):
-                # Handle both structured and JSON loaded formats
-                if isinstance(quiz_question, dict):
-                    # JSON loaded format
-                    options = [opt['option'] for opt in quiz_question['options']]
-                    question_text = quiz_question['question']
-                else:
-                    # Structured format
-                    options = [opt.option for opt in quiz_question.options]
-                    question_text = quiz_question.question
+    # # Vocabulary quiz
+    # st.subheader("Vocabulary Quiz")
+    # if st.session_state.quiz:
+    #     with st.form("quiz_form"):
+    #         quiz_answers = []
+    #         for i, quiz_question in enumerate(st.session_state.quiz[:3], 1):
+    #             # Handle both structured and JSON loaded formats
+    #             if isinstance(quiz_question, dict):
+    #                 # JSON loaded format
+    #                 options = [opt['option'] for opt in quiz_question['options']]
+    #                 question_text = quiz_question['question']
+    #             else:
+    #                 # Structured format
+    #                 options = [opt.option for opt in quiz_question.options]
+    #                 question_text = quiz_question.question
                 
-                answer = st.radio(f"Q{i}: {question_text}", options, key=f"quiz_q{i}")
-                quiz_answers.append(answer)
-            quiz_submitted = st.form_submit_button("Submit Quiz")
-            if quiz_submitted:
-                # Check answers and calculate score
-                correct_answers = 0
-                for i, quiz_question in enumerate(st.session_state.quiz[:3]):
-                    selected_option = quiz_answers[i]
+    #             answer = st.radio(f"Q{i}: {question_text}", options, key=f"quiz_q{i}")
+    #             quiz_answers.append(answer)
+    #         quiz_submitted = st.form_submit_button("Submit Quiz")
+    #         if quiz_submitted:
+    #             # Check answers and calculate score
+    #             correct_answers = 0
+    #             for i, quiz_question in enumerate(st.session_state.quiz[:3]):
+    #                 selected_option = quiz_answers[i]
                     
-                    if isinstance(quiz_question, dict):
-                        # JSON loaded format
-                        correct_option = next((opt['option'] for opt in quiz_question['options'] if opt['is_correct']), None)
-                    else:
-                        # Structured format
-                        correct_option = next((opt.option for opt in quiz_question.options if opt.is_correct), None)
+    #                 if isinstance(quiz_question, dict):
+    #                     # JSON loaded format
+    #                     correct_option = next((opt['option'] for opt in quiz_question['options'] if opt['is_correct']), None)
+    #                 else:
+    #                     # Structured format
+    #                     correct_option = next((opt.option for opt in quiz_question.options if opt.is_correct), None)
                     
-                    if selected_option == correct_option:
-                        correct_answers += 1
+    #                 if selected_option == correct_option:
+    #                     correct_answers += 1
                 
-                score_points = correct_answers * 5
-                st.session_state.points += score_points
+    #             score_points = correct_answers * 5
+    #             st.session_state.points += score_points
                 
-                # Save quiz score and progress
-                progress_data = {
-                    "points": st.session_state.points,
-                    "passages_completed": st.session_state.passages_completed,
-                    "vocab_learned": st.session_state.vocab_learned
-                }
-                save_user_progress(progress_data)
+    #             # Save quiz score and progress
+    #             progress_data = {
+    #                 "points": st.session_state.points,
+    #                 "passages_completed": st.session_state.passages_completed,
+    #                 "vocab_learned": st.session_state.vocab_learned
+    #             }
+    #             save_user_progress(progress_data)
                 
-                st.success(f"Great! You got {correct_answers}/3 correct and earned {score_points} points!")
+    #             st.success(f"Great! You got {correct_answers}/3 correct and earned {score_points} points!")
 
 # Rewards section
 st.header("Your Rewards")
